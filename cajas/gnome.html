@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GNOME - Escritorios</title>
+    <link rel="stylesheet" href="estilos/css/ejemplo.css">
+    <link rel="stylesheet" href="estilos/menus.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropContenido" data-toggle="dropdown">Contenido</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="debian.html">Debian</a></li>
+                        <li class="dropdown-item"><a href="suse.html">SUSE</a></li>
+                        <li class="dropdown-item"><a href="mandriva.html">Mandriva</a></li>
+                        <li class="dropdown-item"><a href="redhat.html">Red Hat</a></li>
+                        <li class="dropdown-item"><a href="mint.html">Mint</a></li>
+                        <li class="dropdown-item"><a href="ubuntu.html">Ubuntu</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropTrucos" data-toggle="dropdown">Trucos</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">Consola</a></li>
+                        <li class="dropdown-item"><a href="#">Servidor</a></li>
+                        <li class="dropdown-item dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Escritorios</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="gnome.html">GNOME</a></li>
+                                <li class="dropdown-item"><a href="kde.html">KDE</a></li>
+                                <li class="dropdown-item"><a href="e17.html">E17</a></li>
+                                <li class="dropdown-item"><a href="xfce.html">xfce</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Otros SO</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="freebsd.html">FreeBSD</a></li>
+                        <li class="dropdown-item"><a href="solaris.html">Solaris</a></li>
+                        <li class="dropdown-item"><a href="react.html">React OS</a></li>
+                        <li class="dropdown-item"><a href="chrome.html">Chrome OS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="central">
+        <h1>GNOME</h1>
+        <p>GNOME es un entorno de escritorio de código abierto y gratuito diseñado para sistemas operativos tipo Unix. Es uno de los entornos de escritorio más populares en el ecosistema de software libre.</p>
+        <p>GNOME se caracteriza por su diseño simple y elegante, así como por su facilidad de uso. Ofrece una interfaz intuitiva y amigable para el usuario, con una serie de aplicaciones integradas y herramientas de personalización.</p>
+        <p>Además de su interfaz gráfica de usuario, GNOME también proporciona una plataforma de desarrollo para crear aplicaciones de escritorio que se integran perfectamente con el entorno. Es altamente personalizable y permite a los usuarios adaptar su experiencia de escritorio a sus necesidades y preferencias.</p>
+    </main>
+    <aside id="delado">
+        <img src="imagenes/logofacebook.png" alt="Facebook" width="100px">
+        <img src="imagenes/logo-yt.png" alt="Youtube" width="100px">
+        <img src="imagenes/logotw.png" alt="Twitter" width="100px">
+    </aside>
+    <br>
+    <div id="pie">
+        <h1>JESÚS ROMÁN FUENTES RUÍZ</h1>
+    </div>
+    <script>
+        $(document).ready(function() {
+            
+            $('.dropdown-toggle').mouseenter(function(){
+                $(this).next('.dropdown-menu').addClass('show');
+            }).mouseleave(function(){
+                $(this).next('.dropdown-menu').removeClass('show');
+            });
+        });
+    </script>
+</body>
+</html>

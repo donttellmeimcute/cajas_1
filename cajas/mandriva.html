@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mandriva - Sistemas Operativos</title>
+    <link rel="stylesheet" href="estilos/css/ejemplo.css">
+    <link rel="stylesheet" href="estilos/menus.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropContenido" data-toggle="dropdown">Contenido</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="debian.html">Debian</a></li>
+                        <li class="dropdown-item"><a href="suse.html">Suse</a></li>
+                        <li class="dropdown-item"><a href="mandriva.html">Mandriva</a></li>
+                        <li class="dropdown-item"><a href="redhat.html">Red Hat</a></li>
+                        <li class="dropdown-item"><a href="mint.html">Mint</a></li>
+                        <li class="dropdown-item"><a href="ubuntu.html">Ubuntu</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropTrucos" data-toggle="dropdown">Trucos</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">Consola</a></li>
+                        <li class="dropdown-item"><a href="#">Servidor</a></li>
+                        <li class="dropdown-item dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Escritorios</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="gnome.html">GNOME</a></li>
+                                <li class="dropdown-item"><a href="kde.html">KDE</a></li>
+                                <li class="dropdown-item"><a href="e17.html">E17</a></li>
+                                <li class="dropdown-item"><a href="xfce.html">xfce</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Otros SO</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="freebsd.html">FreeBSD</a></li>D</a></li>
+                        <li class="dropdown-item"><a href="solaris.html">Solaris</a></li>
+                        <li class="dropdown-item"><a href="react.html">React Os</a></li>
+                        <li class="dropdown-item"><a href="chrome.html">Chrome Os</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="central">
+        <h1>Mandriva</h1>
+        <p>Mandriva fue una distribución de Linux basada en Red Hat Linux y luego en Mandrake Linux, que fue desarrollada por Mandriva S.A.. Fue lanzada en 1998 con el nombre de Mandrake Linux y cambió su nombre a Mandriva Linux en 2005.</p>
+        <p>Mandriva se destacó por su facilidad de uso y su enfoque en la simplicidad para el usuario final. Incluía herramientas gráficas y características que facilitaban la configuración del sistema y la instalación de software.</p>
+        <p>A lo largo de los años, Mandriva experimentó varios cambios en su estructura y dirección, y en 2015, la empresa que la desarrollaba se declaró en quiebra. Aunque no se ha lanzado una versión oficial desde entonces, algunas comunidades de usuarios continuaron manteniendo y desarrollando Mandriva de forma independiente.</p>
+    </main>
+    
+    <aside id="delado">
+        <img src="imagenes/logofacebook.png" alt="Facebook" width="100px">
+        <img src="imagenes/logo-yt.png" alt="Youtube" width="100px">
+        <img src="imagenes/logotw.png" alt="Twitter" width="100px">
+    </aside>
+    <br>
+    <div id="pie">
+        <h1>JESÚS ROMÁN FUENTES RUÍZ</h1>
+    </div>
+    <script>
+        $(document).ready(function() {
+            
+            $('.dropdown-toggle').mouseenter(function(){
+                $(this).next('.dropdown-menu').addClass('show');
+            }).mouseleave(function(){
+                $(this).next('.dropdown-menu').removeClass('show');
+            });
+        });
+    </script>
+</body>
+</html>

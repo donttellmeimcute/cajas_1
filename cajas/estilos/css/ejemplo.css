@@ -1,0 +1,85 @@
+body {
+	background-color: #D8E3B0;
+	background-image: url('../../imagenes/27.jpg');
+}
+
+#central {
+	/*background-color: #D3D3FF;
+	Este fondo lo cambie por el de abajo que añade un degradado de color y una transparencia*/
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(10,255,10,0) 120%);
+	width: 80%;
+	float: left;
+	height: 800px;
+	margin-top: 1.5em;
+	font-family: 'Indie Flower', cursive;
+	color: #0f2f5f;
+	font-size: 24px;
+	padding: 10px;
+	overflow-y: auto;
+	top: 50px;
+	box-sizing: border-box;
+}
+
+#delado {
+	width: 18%;
+	float: right;
+	height: 800px;
+	margin-top: 2.5em;
+	color: #f00;
+	padding: 20px;
+	padding-top: 50px;
+	top: 500px;
+	box-sizing: border-box;
+}
+
+#pie {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 80px;
+	background-color: #EEF;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 760px) {
+	body
+	{
+		background-color: #D8E3B0;
+		background-image: url('../../imagenes/27.jpg');
+	}
+	#central {
+		width: 100%;
+		float: none;
+		height: auto;
+		margin-top: 1.5em;
+		font-family: 'Indie Flower', cursive;
+		color: #0f2f5f;
+		font-size: 24px;
+		padding: 10px;
+		overflow-y: auto;
+		top: 50px;
+		box-sizing: border-box;
+	}
+}
+
+@media  screen and (max-width: 540px) {
+	body{
+		background-color: #D8E3B0;
+		background-image: url('../../imagenes/27.jpg');
+	}
+	#central {
+		width: 100%;
+		float: none;
+		height: auto;
+		margin-top: 1.5em;
+		font-family: 'Indie Flower', cursive;
+		color: #0f2f5f;
+		font-size: 24px;
+		padding: 10px;
+		overflow-y: auto;
+		top: 50px;
+		box-sizing: border-box;
+	}
+	
+}

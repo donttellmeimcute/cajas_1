@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Servidor</title>
+    <link rel="stylesheet" href="estilos/css/ejemplo.css">
+    <link rel="stylesheet" href="estilos/menus.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item dropdown" onmouseover="showContenido()" onmouseout="hideContenido()">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropContenido" data-toggle="dropdown">Contenido</a>
+                    <ul class="dropdown-menu" id="contenidoMenu">
+                        <li class="dropdown-item"><a href="debian.html">Debian</a></li>
+                        <li class="dropdown-item"><a href="suse.html">Suse</a></li>
+                        <li class="dropdown-item"><a href="mandriva.html">Mandriva</a></li>
+                        <li class="dropdown-item"><a href="redhat.html">Red Hat</a></li>
+                        <li class="dropdown-item"><a href="mint.html">Mint</a></li>
+                        <li class="dropdown-item"><a href="ubuntu.html">Ubuntu</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown" onmouseover="showTrucos()" onmouseout="hideTrucos()">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropTrucos" data-toggle="dropdown">Trucos</a>
+                    <ul class="dropdown-menu" id="trucosMenu">
+                        <li class="dropdown-item"><a href="console.html">Consola</a></li>
+                        <li class="dropdown-item"><a href="server.html">Servidor</a></li>
+                        <li class="dropdown-item dropdown" onmouseover="showEscritorios()" onmouseout="hideEscritorios()">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Escritorios</a>
+                            <ul class="dropdown-menu" id="escritoriosMenu">
+                                <li class="dropdown-item"><a href="gnome.html">Gnome</a></li>
+                                <li class="dropdown-item"><a href="kde.html">KDE</a></li>
+                                <li class="dropdown-item"><a href="e17.html">E17</a></li>
+                                <li class="dropdown-item"><a href="xfce.html">xfce</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown" onmouseover="showOtrosSO()" onmouseout="hideOtrosSO()">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropOtrosSO" data-toggle="dropdown">Otros SO</a>
+                    <ul class="dropdown-menu" id="otrosSOMenu">
+                        <li class="dropdown-item"><a href="freebsd.html">FreeBSD</a></li>
+                        <li class="dropdown-item"><a href="solaris.html">Solaris</a></li>
+                        <li class="dropdown-item"><a href="react.html">React OS</a></li>
+                        <li class="dropdown-item"><a href="chrome.html">Chrome OS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="central">
+        <h1>Servidor Web</h1>
+            <p>Sitio web dedicado a la definición de servidores.</p>
+            <p>Un servidor web es un programa informático que procesa las solicitudes HTTP de los clientes y les envía las respuestas correspondientes. Actúa como intermediario entre los usuarios y los recursos web, como páginas HTML, imágenes, archivos CSS, etc. El servidor web se encarga de recibir las solicitudes de los clientes, buscar los recursos solicitados y enviarlos de vuelta al cliente para que puedan ser visualizados en un navegador web.</p>
+        </main>
+    <aside id="delado">
+        <img src="imagenes/logofacebook.png" alt="Facebook" width="100px">
+        <img src="imagenes/logo-yt.png" alt="Youtube" width="100px">
+        <img src="imagenes/logotw.png" alt="Twitter" width="100px">
+    </aside>
+    <br>
+    <div id="pie">
+        <h1>JESÚS ROMÁN FUENTES RUÍZ</h1>
+    </div>
+    <script>
+        function showContenido() {
+            $('#contenidoMenu').addClass('show');
+        }
+        function hideContenido() {
+            $('#contenidoMenu').removeClass('show');
+        }
+        function showTrucos() {
+            $('#trucosMenu').addClass('show');
+        }
+        function hideTrucos() {
+            $('#trucosMenu').removeClass('show');
+        }
+        function showEscritorios() {
+            $('#escritoriosMenu').addClass('show');
+        }
+        function hideEscritorios() {
+            $('#escritoriosMenu').removeClass('show');
+        }
+        function showOtrosSO() {
+            $('#otrosSOMenu').addClass('show');
+        }
+        function hideOtrosSO() {
+            $('#otrosSOMenu').removeClass('show');
+        }
+    </script>
+</body>
+</html>
