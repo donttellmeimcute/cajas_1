@@ -95,5 +95,29 @@
             $('#otrosSOMenu').removeClass('show');
         }
     </script>
+    <script>
+        const contenidoMenu = document.getElementById('contenidoMenu');
+        const trucosMenu = document.getElementById('trucosMenu');
+        const escritoriosMenu = document.getElementById('escritoriosMenu');
+        const otrosSOMenu = document.getElementById('otrosSOMenu');
+
+        function showDropdownMenu(menu) {
+            menu.classList.add('show');
+        }
+
+        function hideDropdownMenu(menu) {
+            menu.classList.remove('show');
+        }
+
+        function addDropdownEventListeners(menu, showFunc, hideFunc) {
+            menu.addEventListener('mouseover', showFunc);
+            menu.addEventListener('mouseout', hideFunc);
+        }
+
+        addDropdownEventListeners(contenidoMenu, () => showDropdownMenu(contenidoMenu), () => hideDropdownMenu(contenidoMenu));
+        addDropdownEventListeners(trucosMenu, () => showDropdownMenu(trucosMenu), () => hideDropdownMenu(trucosMenu));
+        addDropdownEventListeners(escritoriosMenu, () => showDropdownMenu(escritoriosMenu), () => hideDropdownMenu(escritoriosMenu));
+        addDropdownEventListeners(otrosSOMenu, () => showDropdownMenu(otrosSOMenu), () => hideDropdownMenu(otrosSOMenu));
+    </script>
 </body>
 </html>

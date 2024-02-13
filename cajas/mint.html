@@ -4,6 +4,30 @@
 <title>Uso de cajas 2</title>
 <link rel="stylesheet" href="estilos/ejemplo.css" />
 <link rel="stylesheet" href="estilos/menus.css">
+<style>
+	/* BEGIN: Added CSS for dropdown menus */
+	.mi-menu ul {
+		display: none;
+		position: absolute;
+		margin-top: 0;
+		margin-left: 0;
+		padding-left: 0;
+		list-style: none;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		z-index: 9999;
+	}
+
+	.mi-menu li:hover > ul {
+		display: block;
+	}
+
+	.mi-menu ul li {
+		float: none;
+		width: 100%;
+	}
+	/* END: Added CSS for dropdown menus */
+</style>
 </head>
 <body>
 <div id="navegacion">
