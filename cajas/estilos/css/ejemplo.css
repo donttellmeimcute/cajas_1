@@ -42,7 +42,7 @@ body {
 	box-sizing: border-box;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 738px) {
 	body
 	{
 		background-color: #D8E3B0;
@@ -63,7 +63,7 @@ body {
 	}
 }
 
-@media  screen and (max-width: 540px) {
+@media screen and (max-width: 512px) {
 	body{
 		background-color: #D8E3B0;
 		background-image: url('../../imagenes/27.jpg');
@@ -81,5 +81,24 @@ body {
 		top: 50px;
 		box-sizing: border-box;
 	}
-	
+}
+
+@media screen and (max-width: 320px) {
+	body{
+		background-color: #D8E3B0;
+		background-image: url('../../imagenes/27.jpg');
+	}
+	#central {
+		width: 100%;
+		float: none;
+		height: auto;
+		margin-top: 1.5em;
+		font-family: 'Indie Flower', cursive;
+		color: #0f2f5f;
+		font-size: 24px;
+		padding: 10px;
+		overflow-y: auto;
+		top: 50px;
+		box-sizing: border-box;
+	}
 }
