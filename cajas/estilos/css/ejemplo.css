@@ -86,8 +86,8 @@ body {
 @media screen and (max-width: 320px) {
 	body{
 		background-color: pink;
-		
 	}
+
 	#central {
 		width: 100%;
 		float: none;
@@ -100,5 +100,9 @@ body {
 		overflow-y: auto;
 		top: 50px;
 		box-sizing: border-box;
+	}
+	#delado
+	{
+		visibility: hidden;
 	}
 }
