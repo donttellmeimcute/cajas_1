@@ -5,56 +5,44 @@
 	<title>Sistemas Operativos</title>
 	<link rel="stylesheet" href="estilos/css/ejemplo.css">
 	<link rel="stylesheet" href="estilos/menus.css">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav">
-				<li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-				<li class="nav-item dropdown" onmouseover="showContenido()" onmouseout="hideContenido()">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardropContenido" data-toggle="dropdown">Contenido</a>
-					<ul class="dropdown-menu" id="contenidoMenu">
-						<li class="dropdown-item"><a href="debian.html">Debian</a></li>
-						<li class="dropdown-item"><a href="suse.html">Suse</a></li>
-						<li class="dropdown-item"><a href="mandriva.html">Mandriva</a></li>
-						<li class="dropdown-item"><a href="redhat.html">Red Hat</a></li>
-						<li class="dropdown-item"><a href="mint.html">Mint</a></li>
-						<li class="dropdown-item"><a href="ubuntu.html">Ubuntu</a></li>
-					</ul>
-				</li>
-				<li class="nav-item dropdown" onmouseover="showTrucos()" onmouseout="hideTrucos()">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardropTrucos" data-toggle="dropdown">Trucos</a>
-					<ul class="dropdown-menu" id="trucosMenu">
-						<li class="dropdown-item"><a href="console.html">Consola</a></li>
-						<li class="dropdown-item"><a href="server.html">Servidor</a></li>
-						<li class="dropdown-item dropdown" onmouseover="showEscritorios()" onmouseout="hideEscritorios()">
-							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Escritorios</a>
-							<ul class="dropdown-menu" id="escritoriosMenu">
-								<li class="dropdown-item"><a href="gnome.html">Gnome</a></li>
-								<li class="dropdown-item"><a href="kde.html">KDE</a></li>
-								<li class="dropdown-item"><a href="e17.html">E17</a></li>
-								<li class="dropdown-item"><a href="xfce.html">xfce</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li class="nav-item dropdown" onmouseover="showOtrosSO()" onmouseout="hideOtrosSO()">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardropOtrosSO" data-toggle="dropdown">Otros SO</a>
-					<ul class="dropdown-menu" id="otrosSOMenu">
-						<li class="dropdown-item"><a href="freebsd.html">FreeBSD</a></li>
-						<li class="dropdown-item"><a href="solaris.html">Solaris</a></li>
-						<li class="dropdown-item"><a href="react.html">React OS</a></li>
-						<li class="dropdown-item"><a href="chrome.html">Chrome OS</a></li>
-					</ul>
-				</li>
+	<div id="navegacion">
+		<ul class="mi-menu">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="#">Contenido</a>
+			<ul>
+				<li><a href="debian.html">Debian</a></li>
+				<li><a href="suse.html">Suse</a></li>
+				<li><a href="mandriva.html">Mandriva</a></li>
+				<li><a href="redhat.html">Red Hat</a></li>
+				<li><a href="mint.html">Mint</a></li>
+				<li><a href="ubuntu.html">Ubuntu</a></li>
 			</ul>
+			</li>
+			<li><a href="#">Trucos</a>
+			<ul>
+				<li><a href="console.html">Consola</a></li>
+				<li><a href="server.html">Servidor</a></li>
+				<li><a href="gnome.html">Gnome</a></li>
+				<li><a href="kde.html">KDE</a></li>
+				<li><a href="e17.html">E17</a></li>
+				<li><a href="xfce.html">xfce</a></li>
+			</ul>
+			</li>
+			<li><a href="#">Otros SO</a>
+			<ul>
+				<li><a href="freebsd.html">FreeBSD</a></li>
+				<li><a href="solaris.html">Solaris</a></li>
+				<li><a href="react.html">React OS</a></li>
+				<li><a href="chrome.html">Chrome OS</a></li>
+			</ul>
+			</li>
+		</ul>
 		</div>
-	</nav>
+		<div id="central">
 	<main id="central">
 		<h1>Sistemas Operativos</h1>
 		<p>Sitio web dedicado a la difusión de distintos Sistemas operativos</p>
@@ -94,6 +82,12 @@
 		function hideOtrosSO() {
 			$('#otrosSOMenu').removeClass('show');
 		}
+
+		$(window).resize(function() {
+			if ($(window).width() > 768) {
+				$('.navbar-collapse').removeClass('show');
+			}
+		});
 	</script>
 </body>
 </html>

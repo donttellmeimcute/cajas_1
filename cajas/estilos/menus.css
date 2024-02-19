@@ -19,8 +19,8 @@
   }
   
 .mi-menu li a {
-	color: #000;
-	border-right: 4px solid #0F0;
+	color: #FF69B4; /* Cambio el color a rosa */
+	border-right: 4px solid #FF69B4; /* Cambio el color a rosa */
 	display: block;
 	font-family: courier, fixed, monospace;
 	font-size: 18px;
@@ -37,7 +37,7 @@
   .mi-menu li:last-child a{ border-right: none; }
   
   /* Con el efecto hover cambiamos color y tamaño de fuente seleccionada */
-  .mi-menu li:hover > a { color: Red;  font-size: 24px;} 
+  .mi-menu li:hover > a { color: #FF1493; /* Cambio el color a rosa */ font-size: 24px;} 
  
     /* Para los submenús */
   .mi-menu ul {

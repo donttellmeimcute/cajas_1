@@ -1,5 +1,5 @@
 body {
-	background-color: #D8E3B0;
+	background-color: pink;
 	background-image: url('../../imagenes/27.jpg');
 }
 
@@ -38,14 +38,14 @@ body {
 	margin: 0 auto;
 	overflow: hidden;
 	height: 80px;
-	background-color: #EEF;
+	background-color: pink;
 	box-sizing: border-box;
 }
 
 @media screen and (max-width: 738px) {
 	body
 	{
-		background-color: #D8E3B0;
+		background-color: pink;
 		background-image: url('../../imagenes/27.jpg');
 	}
 	#central {
@@ -65,8 +65,8 @@ body {
 
 @media screen and (max-width: 512px) {
 	body{
-		background-color: #D8E3B0;
-		background-image: url('../../imagenes/27.jpg');
+		background-color: pink;
+		
 	}
 	#central {
 		width: 100%;
@@ -85,8 +85,8 @@ body {
 
 @media screen and (max-width: 320px) {
 	body{
-		background-color: #D8E3B0;
-		background-image: url('../../imagenes/27.jpg');
+		background-color: pink;
+		
 	}
 	#central {
 		width: 100%;
